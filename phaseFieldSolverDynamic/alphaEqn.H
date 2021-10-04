@@ -6,7 +6,7 @@ const scalar randNumber(obj.scalar01());
 #include "dAdgradPhiMod.H"
 //! Implicit discretization using fvm class for time derivative and laplacian.
 //! Explicit discretization using fvc class for divergence.
-//! Phase-field equation with approximate relation between c, mu and T according to the phase diagram
+//! Phase-field equation with approximate relation between c, mu and T according to the parabolic approximation for free energy
 fvScalarMatrix alphaEqn
 (
 /*omega*epsilon*dimt*fvm::ddt(alpha)
@@ -25,7 +25,7 @@ alphaEqn.solve();
 //! The unit normal vector to the interface with a small number in denominator to prevent solution from diverging
 volVectorField n=dimx*fvc::grad(phi)/(1E-20+mag(dimx*fvc::grad(phi)));
 
-//! Chemical potential equation with approximate slope of c-mu curve according to the phase diagram
+//! Chemical potential equation with approximate slope of c-mu curve according to the parabolic approximation for free energy
 fvScalarMatrix muEqn
 (
     (0.5)*(1/A)*dimt*fvm::ddt(mu) == diff_Liq*0.5*(1/A)*dimx*dimx*fvm::laplacian((1-phi),mu) - (c_Sol-c_Liq)* dimt*fvc::ddt(phi)*30.0*phi*phi*(1.0-phi)*(1.0-phi) - anti_trap*epsilon*(c_Sol-c_Liq)*dimx*fvc::div((n*dimt*fvc::ddt(phi)))

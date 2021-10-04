@@ -123,11 +123,21 @@ $$
 &{\omega}{\epsilon}{\frac {\partial \phi} {\partial t}} = {\epsilon}\left({\nabla}\cdot{\frac {\partial a({\nabla}\phi)} {\partial {\nabla}\phi}}\right) - 18{\frac {\gamma} {\epsilon}} \phi (1 - \phi) (1 - 2\phi) \\
 &+ {\frac {1} {2}} {\epsilon} [c^\alpha (T,\mu_{eq}) - c^\beta (T,\mu_{eq})](\mu - \mu_{eq}){\frac {\partial h_\alpha (\phi)} {\partial \phi}} + 6rM{\phi}^2(1 - \phi)^2
 \end{aligned}
-\tag{11}
-\label{11}
+\tag{11a}
+\label{11a}
 $$
 
-* In this model, direct solution is conducted for the thermodynamic variable $\mu$, which relate the phase concentrations $c^\alpha_i$. This is possible because the concentrations $c^\alpha_i(T,\mu)$ are written as explicit functions of the chemical potential $\mu$. As will be seen in the solver source code, the equilibrium chemical potential, $\mu_{eq}$ is expressed in terms of slope of the liquidus, $m_{\beta}$, equilibrium composition, $c^{eq}$ and melting temperature, $T_0$ according to the phase diagram. The evolution equation for $\mu$ can be written as:
+* In this model, direct solution is conducted for the thermodynamic variable $\mu$, which relate the phase concentrations $c^\alpha_i$. This is possible because the concentrations $c^\alpha_i(T,\mu)$ are written as explicit functions of the chemical potential $\mu$. As will be seen in the solver source code, the equilibrium chemical potential, $\mu_{eq}$ is expressed in terms of slope of the liquidus, $m_{\beta}$, equilibrium composition, $c^{eq}$ and melting temperature, $T_0$. According to the parabolic approximation for free energy: 
+
+$$
+\mu_{eq} = 2A c^{eq} - 2A (T_0 - T)/m_{\beta}
+\tag{11b}
+\label{11b}
+$$
+
+$A$ is derived following the consequence of equilibrium between the different phases described by the common tangent construction.
+
+* The evolution equation for $\mu$ can be written as:
 
 $$
 \begin{aligned}
@@ -144,10 +154,16 @@ $$
 &\left({\frac {\partial c^\alpha (T,\mu)} {\partial \mu}} h_\alpha (\phi) + {\frac {\partial c^\beta (T,\mu)} {\partial \mu}}[1 - h_\alpha (\phi)]\right) {\frac {\partial \mu} {\partial t}} \\
 &= \nabla \cdot \left(D^\beta[1 - g_\alpha (\phi)]{\frac {\partial c^\beta (T,\mu)} {\partial \mu}} \nabla \mu - j_{at}\right) - [c^\alpha (T,\mu) - c^\beta (T,\mu)]{\frac {\partial h_\alpha (\phi)} {\partial t}}
 \end{aligned}
-\tag{13}
-\label{13}
+\tag{13a}
+\label{13a}
 $$
-Further, the slope of $c$-$\mu$ curve is approximated according to the phase diagram in the solver source code.
+Further, $g_\alpha (\phi)$, the interpolation function is chosen as $\phi$. The slope of $c$-$\mu$ curves is approximated according to the parabolic approximation for free energy in the solver source code:
+
+$$
+{\frac {\partial c^\alpha (T,\mu)} {\partial \mu}} = {\frac {\partial c^\beta (T,\mu)} {\partial \mu}} = {\frac {1} {2 A}}
+\tag{13b}
+\label{13b}
+$$
 
 * To make sure that the anti-trapping current appears in the first-order correction to the chemical potential, the anti-trapping current is formulated into the following form:
 
@@ -180,7 +196,7 @@ $$
 
 * Slope liquidus ($m_{\beta}$) = 0.45
 
-* Slope solidus ($m_{\alpha}$) = 0.45
+* Slope solidus ($m_{\alpha}$) = 1e9
 
 * Relaxation coefficient ($\omega$) = 1.687
 
@@ -204,11 +220,13 @@ $$
 
 * Noise magnitude ($M$) = 0.003
 
-* Constant value from temperature profile ($T_i$) = 0.93
+* Constant value from temperature profile ($T_{initial}$) = 0.93
 
 * Melting temperature ($T_0$) = 1.0
 
 * Strength of anisotropy ($\delta$) = 0.02
+
+The slope of the solidus ($m_{\alpha}$) is kept very high for equation (11b) to be valid.
 
 ***Solver name***
 
@@ -387,7 +405,7 @@ knitr::include_graphics('freeGrowth2500000c.png')
 The second case is performed by subjecting the melt to a positive thermal gradient ahead of the solid-liquid interface. The imposed temperature field as a function of thermal gradient in the x direction, $G$ and pulling velocity, $v$ is taken as:
 
 $$
-T(x) = T_i + G(x-vt)
+T(x,t) = T_{initial} + G(x-vt)
 \tag{16}
 \label{16}
 $$

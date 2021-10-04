@@ -123,7 +123,7 @@ Functions</h2></td></tr>
 <tr class="memitem:a7e0e00a31c3417c930e912229e3b69f4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="alpha_eqn_8_h.html#aa229a0f171f9e18ae2776466a09adf1b">alphaEqn</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="alpha_eqn_8_h.html#a7e0e00a31c3417c930e912229e3b69f4">solve</a> ()</td></tr>
 <tr class="separator:a7e0e00a31c3417c930e912229e3b69f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa393955d1a427a08ee861b7ce6370f27"><td class="memItemLeft" align="right" valign="top">fvScalarMatrix&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="alpha_eqn_8_h.html#aa393955d1a427a08ee861b7ce6370f27">muEqn</a> ((0.5) *(1/<a class="el" href="read_transport_properties_8_h.html#af67d8b98a8cb1d58eb00ee2dc9fe9f7f">A</a>) *<a class="el" href="read_transport_properties_8_h.html#a2643c7554a2a153b7e09d2d3106d9e88">dimt</a> *fvm::ddt(<a class="el" href="create_fields_8_h.html#a35f0f7f70ade320a602ef10eecb355ef">mu</a>)==<a class="el" href="read_transport_properties_8_h.html#af216f35c63596494a598b1088789cc8a">diff_Liq</a> *0.5 *(1/<a class="el" href="read_transport_properties_8_h.html#af67d8b98a8cb1d58eb00ee2dc9fe9f7f">A</a>) *<a class="el" href="read_transport_properties_8_h.html#af589b6be2b2f8d27fa13e0d974be4e09">dimx</a> *<a class="el" href="read_transport_properties_8_h.html#af589b6be2b2f8d27fa13e0d974be4e09">dimx</a> *fvm::laplacian((1-<a class="el" href="create_fields_8_h.html#a8aee6609d88e034725a0cb36b6e2d72f">phi</a>), <a class="el" href="create_fields_8_h.html#a35f0f7f70ade320a602ef10eecb355ef">mu</a>) -(<a class="el" href="read_transport_properties_8_h.html#afcb95e7f899c61b1b0357b80d48a667c">c_Sol</a>-<a class="el" href="read_transport_properties_8_h.html#a766e01976d7cd5dcc31e67df32ea7f86">c_Liq</a>) *<a class="el" href="read_transport_properties_8_h.html#a2643c7554a2a153b7e09d2d3106d9e88">dimt</a> *fvc::ddt(<a class="el" href="create_fields_8_h.html#a8aee6609d88e034725a0cb36b6e2d72f">phi</a>) *30.0 *<a class="el" href="create_fields_8_h.html#a8aee6609d88e034725a0cb36b6e2d72f">phi</a> *<a class="el" href="create_fields_8_h.html#a8aee6609d88e034725a0cb36b6e2d72f">phi</a> *(1.0-<a class="el" href="create_fields_8_h.html#a8aee6609d88e034725a0cb36b6e2d72f">phi</a>) *(1.0-<a class="el" href="create_fields_8_h.html#a8aee6609d88e034725a0cb36b6e2d72f">phi</a>) - <a class="el" href="read_transport_properties_8_h.html#aa12622ea224bf03c1e58c8a86d76bbe9">anti_trap</a> *<a class="el" href="read_transport_properties_8_h.html#ac61c5168b7c5ade90dfa93b5253ec255">epsilon</a> *(<a class="el" href="read_transport_properties_8_h.html#afcb95e7f899c61b1b0357b80d48a667c">c_Sol</a>-<a class="el" href="read_transport_properties_8_h.html#a766e01976d7cd5dcc31e67df32ea7f86">c_Liq</a>) *<a class="el" href="read_transport_properties_8_h.html#af589b6be2b2f8d27fa13e0d974be4e09">dimx</a> *fvc::div((<a class="el" href="alpha_eqn_8_h.html#a7007631da9e98e59d56f04d6f3b14295">n</a> *<a class="el" href="read_transport_properties_8_h.html#a2643c7554a2a153b7e09d2d3106d9e88">dimt</a> *fvc::ddt(<a class="el" href="create_fields_8_h.html#a8aee6609d88e034725a0cb36b6e2d72f">phi</a>))))</td></tr>
-<tr class="memdesc:aa393955d1a427a08ee861b7ce6370f27"><td class="mdescLeft">&#160;</td><td class="mdescRight">Chemical potential equation with approximate slope of c-mu curve according to the phase diagram.  <a href="alpha_eqn_8_h.html#aa393955d1a427a08ee861b7ce6370f27">More...</a><br /></td></tr>
+<tr class="memdesc:aa393955d1a427a08ee861b7ce6370f27"><td class="mdescLeft">&#160;</td><td class="mdescRight">Chemical potential equation with approximate slope of c-mu curve according to the parabolic approximation for free energy.  <a href="alpha_eqn_8_h.html#aa393955d1a427a08ee861b7ce6370f27">More...</a><br /></td></tr>
 <tr class="separator:aa393955d1a427a08ee861b7ce6370f27"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
@@ -186,7 +186,7 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Implicit discretization using fvm class for time derivative and laplacian. Explicit discretization using fvc class for divergence. Phase-field equation with approximate relation between c, mu and T according to the phase diagram </p>
+<p>Implicit discretization using fvm class for time derivative and laplacian. Explicit discretization using fvc class for divergence. Phase-field equation with approximate relation between c, mu and T according to the parabolic approximation for free energy </p>
 
 </div>
 </div>
@@ -223,7 +223,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Chemical potential equation with approximate slope of c-mu curve according to the phase diagram. </p>
+<p>Chemical potential equation with approximate slope of c-mu curve according to the parabolic approximation for free energy. </p>
 
 </div>
 </div>
