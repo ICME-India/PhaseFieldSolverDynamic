@@ -17,7 +17,7 @@ FoamFile
 
 dimx        dimx [0 1 0 0 0 0 0] 1; //Dimension of position
 dimt        dimt [0 0 1 0 0 0 0] 1; //Dimension of time
-m_0         m_0 [0 0 0 0 0 0 0] 0.45; //Slope solidus
+m_0         m_0 [0 0 0 0 0 0 0] 1e9; //Slope solidus
 m_1         m_1 [0 0 0 0 0 0 0] 0.45; //Slope liquidus
 omega       omega [0 0 0 0 0 0 0] 1.687; //Relaxation coefficient for phi (order parameter)
 gamma       gamma [0 0 0 0 0 0 0] 1; //Surface Energy

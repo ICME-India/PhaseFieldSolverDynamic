@@ -322,11 +322,20 @@ h(\phi) = {\phi}^3(6{\phi}^2 - 15{\phi} + 10)
 &amp;{\omega}{\epsilon}{\frac {\partial \phi} {\partial t}} = {\epsilon}\left({\nabla}\cdot{\frac {\partial a({\nabla}\phi)} {\partial {\nabla}\phi}}\right) - 18{\frac {\gamma} {\epsilon}} \phi (1 - \phi) (1 - 2\phi) \\
 &amp;+ {\frac {1} {2}} {\epsilon} [c^\alpha (T,\mu_{eq}) - c^\beta (T,\mu_{eq})](\mu - \mu_{eq}){\frac {\partial h_\alpha (\phi)} {\partial \phi}} + 6rM{\phi}^2(1 - \phi)^2
 \end{aligned}
-\tag{11}
-\label{11}
+\tag{11a}
+\label{11a}
 \]</span></p>
 <ul>
-<li>In this model, direct solution is conducted for the thermodynamic variable <span class="math inline">\(\mu\)</span>, which relate the phase concentrations <span class="math inline">\(c^\alpha_i\)</span>. This is possible because the concentrations <span class="math inline">\(c^\alpha_i(T,\mu)\)</span> are written as explicit functions of the chemical potential <span class="math inline">\(\mu\)</span>. As will be seen in the solver source code, the equilibrium chemical potential, <span class="math inline">\(\mu_{eq}\)</span> is expressed in terms of slope of the liquidus, <span class="math inline">\(m_{\beta}\)</span>, equilibrium composition, <span class="math inline">\(c^{eq}\)</span> and melting temperature, <span class="math inline">\(T_0\)</span> according to the phase diagram. The evolution equation for <span class="math inline">\(\mu\)</span> can be written as:</li>
+<li>In this model, direct solution is conducted for the thermodynamic variable <span class="math inline">\(\mu\)</span>, which relate the phase concentrations <span class="math inline">\(c^\alpha_i\)</span>. This is possible because the concentrations <span class="math inline">\(c^\alpha_i(T,\mu)\)</span> are written as explicit functions of the chemical potential <span class="math inline">\(\mu\)</span>. As will be seen in the solver source code, the equilibrium chemical potential, <span class="math inline">\(\mu_{eq}\)</span> is expressed in terms of slope of the liquidus, <span class="math inline">\(m_{\beta}\)</span>, equilibrium composition, <span class="math inline">\(c^{eq}\)</span> and melting temperature, <span class="math inline">\(T_0\)</span>. According to the parabolic approximation for free energy:</li>
+</ul>
+<p><span class="math display">\[
+\mu_{eq} = 2A c^{eq} - 2A (T_0 - T)/m_{\beta}
+\tag{11b}
+\label{11b}
+\]</span></p>
+<p><span class="math inline">\(A\)</span> is derived following the consequence of equilibrium between the different phases described by the common tangent construction.</p>
+<ul>
+<li>The evolution equation for <span class="math inline">\(\mu\)</span> can be written as:</li>
 </ul>
 <p><span class="math display">\[
 \begin{aligned}
@@ -341,9 +350,14 @@ h(\phi) = {\phi}^3(6{\phi}^2 - 15{\phi} + 10)
 &amp;\left({\frac {\partial c^\alpha (T,\mu)} {\partial \mu}} h_\alpha (\phi) + {\frac {\partial c^\beta (T,\mu)} {\partial \mu}}[1 - h_\alpha (\phi)]\right) {\frac {\partial \mu} {\partial t}} \\
 &amp;= \nabla \cdot \left(D^\beta[1 - g_\alpha (\phi)]{\frac {\partial c^\beta (T,\mu)} {\partial \mu}} \nabla \mu - j_{at}\right) - [c^\alpha (T,\mu) - c^\beta (T,\mu)]{\frac {\partial h_\alpha (\phi)} {\partial t}}
 \end{aligned}
-\tag{13}
-\label{13}
-\]</span> Further, the slope of <span class="math inline">\(c\)</span>-<span class="math inline">\(\mu\)</span> curve is approximated according to the phase diagram in the solver source code.</p>
+\tag{13a}
+\label{13a}
+\]</span> Further, <span class="math inline">\(g_\alpha (\phi)\)</span>, the interpolation function is chosen as <span class="math inline">\(\phi\)</span>. The slope of <span class="math inline">\(c\)</span>-<span class="math inline">\(\mu\)</span> curves is approximated according to the parabolic approximation for free energy in the solver source code:</p>
+<p><span class="math display">\[
+{\frac {\partial c^\alpha (T,\mu)} {\partial \mu}} = {\frac {\partial c^\beta (T,\mu)} {\partial \mu}} = {\frac {1} {2 A}}
+\tag{13b}
+\label{13b}
+\]</span></p>
 <ul>
 <li>To make sure that the anti-trapping current appears in the first-order correction to the chemical potential, the anti-trapping current is formulated into the following form:</li>
 </ul>
@@ -372,7 +386,7 @@ j_{at} = -s(\phi) \epsilon [c^\beta (T,\mu) - c^\alpha (T,\mu)] {\frac {\partial
 <p><strong><em>Physical properties</em></strong> The nondimensionalized physical properties pertaining to AlZn alloy are:</p>
 <ul>
 <li><p>Slope liquidus (<span class="math inline">\(m_{\beta}\)</span>) = 0.45</p></li>
-<li><p>Slope solidus (<span class="math inline">\(m_{\alpha}\)</span>) = 0.45</p></li>
+<li><p>Slope solidus (<span class="math inline">\(m_{\alpha}\)</span>) = 1e9</p></li>
 <li><p>Relaxation coefficient (<span class="math inline">\(\omega\)</span>) = 1.687</p></li>
 <li><p>Surface energy (<span class="math inline">\(\gamma\)</span>) = 1</p></li>
 <li><p>Interface width (<span class="math inline">\(\epsilon\)</span>) = 48</p></li>
@@ -384,10 +398,11 @@ j_{at} = -s(\phi) \epsilon [c^\beta (T,\mu) - c^\alpha (T,\mu)] {\frac {\partial
 <li><p>Thermal gradient (<span class="math inline">\(G\)</span>) = 0</p></li>
 <li><p>Velocity (<span class="math inline">\(v\)</span>) = 0</p></li>
 <li><p>Noise magnitude (<span class="math inline">\(M\)</span>) = 0.003</p></li>
-<li><p>Constant value from temperature profile (<span class="math inline">\(T_i\)</span>) = 0.93</p></li>
+<li><p>Constant value from temperature profile (<span class="math inline">\(T_{initial}\)</span>) = 0.93</p></li>
 <li><p>Melting temperature (<span class="math inline">\(T_0\)</span>) = 1.0</p></li>
 <li><p>Strength of anisotropy (<span class="math inline">\(\delta\)</span>) = 0.02</p></li>
 </ul>
+<p>The slope of the solidus (<span class="math inline">\(m_{\alpha}\)</span>) is kept very high for equation (11b) to be valid.</p>
 <p><strong><em>Solver name</em></strong></p>
 <ul>
 <li><em>phaseFieldDynamic</em>: An implementation with dynamic interface refinement for phase-field method to model solidification of two-phase two-component system.</li>
@@ -1040,7 +1055,7 @@ Figure 7: Chemical potential at time 2500000.
 <h1 number="2"><span class="header-section-number">2</span> Directional solidification</h1>
 <p>The second case is performed by subjecting the melt to a positive thermal gradient ahead of the solid-liquid interface. The imposed temperature field as a function of thermal gradient in the x direction, <span class="math inline">\(G\)</span> and pulling velocity, <span class="math inline">\(v\)</span> is taken as:</p>
 <p><span class="math display">\[
-T(x) = T_i + G(x-vt)
+T(x,t) = T_{initial} + G(x-vt)
 \tag{16}
 \label{16}
 \]</span></p>

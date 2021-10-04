@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.9.28)  28 SEP 2021 15:20
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.9.28)  4 OCT 2021 11:33
 entering extended mode
 **./refman.tex
 (refman.tex
@@ -1002,10 +1002,10 @@ Overfull \hbox (238.88847pt too wide) in paragraph at lines 71--72
 $$\T1/pcr/m/sl/8 fvc[]
  []
 
-) (correct_phi_8_h.tex
+) (correct_phi_8_h.tex [7]
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 (Font)              scaled to size 7.19995pt on input line 18.
- [7]) (create_fields_8_h.tex <./create_fields_8_h__incl.pdf
+) (create_fields_8_h.tex <./create_fields_8_h__incl.pdf
 
 pdfTeX warning: pdflatex (file ./create_fields_8_h__incl.pdf): PDF inclusion: m
 ultiple pdfs with page group included in a single page
@@ -1167,7 +1167,7 @@ Package rerunfilecheck Info: File `refman.out' has not changed.
  ) 
 Here is how much of TeX's memory you used:
  16823 strings out of 480839
- 262618 string characters out of 2903804
+ 262338 string characters out of 2903804
  597073 words of memory out of 3000000
  33944 multiletter control sequences out of 15000+600000
  461900 words of font info for 97 fonts, out of 8000000 for 9000
@@ -1185,7 +1185,7 @@ l/fonts/type1/urw/helvetic/uhvb8a.pfb></home/tanmay/.miktex/texmfs/install/font
 s/type1/urw/helvetic/uhvb8ac.pfb></home/tanmay/.miktex/texmfs/install/fonts/typ
 e1/urw/helvetic/uhvr8a.pfb></home/tanmay/.miktex/texmfs/install/fonts/type1/urw
 /helvetic/uhvro8a.pfb>
-Output written on refman.pdf (26 pages, 350688 bytes).
+Output written on refman.pdf (26 pages, 350817 bytes).
 PDF statistics:
  937 PDF objects out of 1000 (max. 8388607)
  163 named destinations out of 1000 (max. 500000)
