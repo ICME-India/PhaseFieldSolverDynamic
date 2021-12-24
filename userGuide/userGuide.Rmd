@@ -35,7 +35,7 @@ The problem is defined as follows:
 knitr::include_graphics('geomfg.png')
 ```
 
-***Governing equations*** The basic idea of the phase-field model consists in the description of the evolution of individual phases using the corresponding set of order parameters (the phase-field variables). For each phase, the associated phase-field variable is equal to 1 inside the phase and vanishes to 0 outside the area occupied by the considered phase. The transition of phase fields from 1 to 0 at the phase boundaries is continuous and smooth, i.e.,the phase boundaries are represented by diffuse interfaces with a finite thickness. Phase evolution is determined by the phenomenological minimization of the functional, which is formulated as the grand- potential functional (@Choudhury). The evolution equation for two phase-field variable can be written as:
+***Governing equations*** The basic idea of the phase-field model consists in the description of the evolution of individual phases using the corresponding set of order parameters (the phase-field variables). For each phase, the associated phase-field variable is equal to 1 inside the phase and vanishes to 0 outside the area occupied by the considered phase. The transition of phase fields from 1 to 0 at the phase boundaries is continuous and smooth, i.e.,the phase boundaries are represented by diffuse interfaces with a finite thickness. Phase evolution is determined by the phenomenological minimization of the functional, which is formulated as the grand-potential functional (@Choudhury). The evolution equation for two phase-field variable can be written as:
 
 $$
 {\omega}{\epsilon}{\frac {\partial \phi} {\partial t}} = {\epsilon}\left({\nabla}\cdot{\frac {\partial a({\nabla}\phi)} {\partial {\nabla}\phi}}\right) - {\frac {1} {\epsilon}}{\frac {\partial w(\phi)} {\partial \phi}} - {\frac {\partial \Psi(T, \mu, \phi)} {\partial \phi}}
@@ -94,7 +94,7 @@ $$
 \begin{aligned}
 &\Delta F^\alpha = [\Psi_\alpha (T,\mu) - \Psi_\beta (T,\mu)]{\frac {\partial h_\alpha (\phi)} {\partial \phi}} \\
 &= \left({\frac {\partial \Psi_\alpha (T,\mu)} {\partial \mu}}|_{\mu_{eq}} - {\frac {\partial \Psi_\beta (T,\mu)} {\partial \mu}}|_{\mu_{eq}}\right)(\mu - \mu_{eq}){\frac {\partial h_\alpha (\phi)} {\partial \phi}} \\
-&= [c^\alpha (T,\mu_{eq}) - c^\beta (T,\mu_{eq})](\mu - \mu_{eq}){\frac {\partial h_\alpha (\phi)} {\partial \phi}}
+&= -[c^\alpha (T,\mu_{eq}) - c^\beta (T,\mu_{eq})](\mu - \mu_{eq}){\frac {\partial h_\alpha (\phi)} {\partial \phi}}
 \end{aligned}
 \tag{8}
 \label{8}
@@ -121,7 +121,7 @@ where $r$ is a random number distributed uniformly between 0 and 1, and a new nu
 $$
 \begin{aligned}
 &{\omega}{\epsilon}{\frac {\partial \phi} {\partial t}} = {\epsilon}\left({\nabla}\cdot{\frac {\partial a({\nabla}\phi)} {\partial {\nabla}\phi}}\right) - 18{\frac {\gamma} {\epsilon}} \phi (1 - \phi) (1 - 2\phi) \\
-&+ {\frac {1} {2}} {\epsilon} [c^\alpha (T,\mu_{eq}) - c^\beta (T,\mu_{eq})](\mu - \mu_{eq}){\frac {\partial h_\alpha (\phi)} {\partial \phi}} + 6rM{\phi}^2(1 - \phi)^2
+&+ [c^\alpha (T,\mu_{eq}) - c^\beta (T,\mu_{eq})](\mu - \mu_{eq}){\frac {\partial h_\alpha (\phi)} {\partial \phi}} + 6rM{\phi}^2(1 - \phi)^2
 \end{aligned}
 \tag{11a}
 \label{11a}

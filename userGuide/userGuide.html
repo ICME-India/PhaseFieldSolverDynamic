@@ -244,7 +244,7 @@ pre code {
 Figure 1: Geometry of the melt with an undercooled region.
 </p>
 </div>
-<p><strong><em>Governing equations</em></strong> The basic idea of the phase-field model consists in the description of the evolution of individual phases using the corresponding set of order parameters (the phase-field variables). For each phase, the associated phase-field variable is equal to 1 inside the phase and vanishes to 0 outside the area occupied by the considered phase. The transition of phase fields from 1 to 0 at the phase boundaries is continuous and smooth, i.e.,the phase boundaries are represented by diffuse interfaces with a finite thickness. Phase evolution is determined by the phenomenological minimization of the functional, which is formulated as the grand- potential functional (<span class="citation"><a href="#ref-Choudhury" role="doc-biblioref">Choudhury and Nestler</a> [<a href="#ref-Choudhury" role="doc-biblioref">(2012)</a>]</span>). The evolution equation for two phase-field variable can be written as:</p>
+<p><strong><em>Governing equations</em></strong> The basic idea of the phase-field model consists in the description of the evolution of individual phases using the corresponding set of order parameters (the phase-field variables). For each phase, the associated phase-field variable is equal to 1 inside the phase and vanishes to 0 outside the area occupied by the considered phase. The transition of phase fields from 1 to 0 at the phase boundaries is continuous and smooth, i.e.,the phase boundaries are represented by diffuse interfaces with a finite thickness. Phase evolution is determined by the phenomenological minimization of the functional, which is formulated as the grand-potential functional (<span class="citation"><a href="#ref-Choudhury" role="doc-biblioref">Choudhury and Nestler</a> [<a href="#ref-Choudhury" role="doc-biblioref">(2012)</a>]</span>). The evolution equation for two phase-field variable can be written as:</p>
 <p><span class="math display">\[
 {\omega}{\epsilon}{\frac {\partial \phi} {\partial t}} = {\epsilon}\left({\nabla}\cdot{\frac {\partial a({\nabla}\phi)} {\partial {\nabla}\phi}}\right) - {\frac {1} {\epsilon}}{\frac {\partial w(\phi)} {\partial \phi}} - {\frac {\partial \Psi(T, \mu, \phi)} {\partial \phi}}
 \tag{1}
@@ -296,7 +296,7 @@ a_c(\nabla \phi) = 1 - \delta \left(3 - {\frac {4[(\nabla_x \phi)^4+(\nabla_y \p
 \begin{aligned}
 &amp;\Delta F^\alpha = [\Psi_\alpha (T,\mu) - \Psi_\beta (T,\mu)]{\frac {\partial h_\alpha (\phi)} {\partial \phi}} \\
 &amp;= \left({\frac {\partial \Psi_\alpha (T,\mu)} {\partial \mu}}|_{\mu_{eq}} - {\frac {\partial \Psi_\beta (T,\mu)} {\partial \mu}}|_{\mu_{eq}}\right)(\mu - \mu_{eq}){\frac {\partial h_\alpha (\phi)} {\partial \phi}} \\
-&amp;= [c^\alpha (T,\mu_{eq}) - c^\beta (T,\mu_{eq})](\mu - \mu_{eq}){\frac {\partial h_\alpha (\phi)} {\partial \phi}}
+&amp;= -[c^\alpha (T,\mu_{eq}) - c^\beta (T,\mu_{eq})](\mu - \mu_{eq}){\frac {\partial h_\alpha (\phi)} {\partial \phi}}
 \end{aligned}
 \tag{8}
 \label{8}
@@ -320,7 +320,7 @@ h(\phi) = {\phi}^3(6{\phi}^2 - 15{\phi} + 10)
 <p><span class="math display">\[
 \begin{aligned}
 &amp;{\omega}{\epsilon}{\frac {\partial \phi} {\partial t}} = {\epsilon}\left({\nabla}\cdot{\frac {\partial a({\nabla}\phi)} {\partial {\nabla}\phi}}\right) - 18{\frac {\gamma} {\epsilon}} \phi (1 - \phi) (1 - 2\phi) \\
-&amp;+ {\frac {1} {2}} {\epsilon} [c^\alpha (T,\mu_{eq}) - c^\beta (T,\mu_{eq})](\mu - \mu_{eq}){\frac {\partial h_\alpha (\phi)} {\partial \phi}} + 6rM{\phi}^2(1 - \phi)^2
+&amp;+ [c^\alpha (T,\mu_{eq}) - c^\beta (T,\mu_{eq})](\mu - \mu_{eq}){\frac {\partial h_\alpha (\phi)} {\partial \phi}} + 6rM{\phi}^2(1 - \phi)^2
 \end{aligned}
 \tag{11a}
 \label{11a}
