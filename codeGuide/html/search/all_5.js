@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['g_19',['G',['../read_transport_properties_8_h.html#ac2cebe58f13eebd1788ee78f2145eb2c',1,'readTransportProperties.H']]],
-  ['gamma_20',['gamma',['../read_transport_properties_8_h.html#a31619d10dbfcc35662cdf7a2b3f087db',1,'readTransportProperties.H']]],
-  ['geometriczerofield_21',['geometricZeroField',['../correct_phi_8_h.html#adf996c3fa41719856597eb94517184ad',1,'correctPhi.H']]]
+  ['if_21',['if',['../write_8_h.html#a933d9734286956bc9df9a9a17450231c',1,'write.H']]],
+  ['info_2emd_22',['info.md',['../info_8md.html',1,'']]],
+  ['initial_23',['initial',['../read_transport_properties_8_h.html#a131cb0cde668ae9edb66df2159f6dddf',1,'readTransportProperties.H']]]
 ];

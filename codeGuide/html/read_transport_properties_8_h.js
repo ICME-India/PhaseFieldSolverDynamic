@@ -18,7 +18,6 @@ var read_transport_properties_8_h =
     [ "v", "read_transport_properties_8_h.html#aebef63bdd9e1cd9ac16ac14eb49f8c45", null ],
     [ "delta_01", "read_transport_properties_8_h.html#abb20051a91cca7c5b5714d57adabdbf5", null ],
     [ "A", "read_transport_properties_8_h.html#af67d8b98a8cb1d58eb00ee2dc9fe9f7f", null ],
-    [ "B", "read_transport_properties_8_h.html#a3221eba463f7ee2eeb3714f8462ef83f", null ],
     [ "T0", "read_transport_properties_8_h.html#aef08f1e0c95b88c69d69eedbd9975d92", null ],
     [ "noise_mag", "read_transport_properties_8_h.html#a33e8e7e0095aaad448ba518b9cf8d6e3", null ],
     [ "initial", "read_transport_properties_8_h.html#a131cb0cde668ae9edb66df2159f6dddf", null ],

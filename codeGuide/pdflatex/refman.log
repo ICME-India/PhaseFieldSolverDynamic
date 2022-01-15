@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.9.28)  4 OCT 2021 11:33
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.9.28)  15 JAN 2022 12:20
 entering extended mode
 **./refman.tex
 (refman.tex
@@ -930,7 +930,7 @@ ple pdfs with page group included in a single page
 <alpha_eqn_8_h__incl.pdf, id=393, 226.8475pt x 178.6675pt>
 File: alpha_eqn_8_h__incl.pdf Graphic file (type pdf)
 <use alpha_eqn_8_h__incl.pdf>
-Package pdftex.def Info: alpha_eqn_8_h__incl.pdf  used on input line 8.
+Package pdftex.def Info: alpha_eqn_8_h__incl.pdf  used on input line 9.
 (pdftex.def)             Requested size: 226.0pt x 178.00185pt.
  <./alpha_eqn_8_h__dep__incl.pdf
 
@@ -940,19 +940,19 @@ multiple pdfs with page group included in a single page
 <alpha_eqn_8_h__dep__incl.pdf, id=401, 226.8475pt x 200.75pt>
 File: alpha_eqn_8_h__dep__incl.pdf Graphic file (type pdf)
 <use alpha_eqn_8_h__dep__incl.pdf>
-Package pdftex.def Info: alpha_eqn_8_h__dep__incl.pdf  used on input line 15.
+Package pdftex.def Info: alpha_eqn_8_h__dep__incl.pdf  used on input line 17.
 (pdftex.def)             Requested size: 226.0pt x 200.00208pt.
  [5]
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 10.79993pt on input line 18.
+(Font)              scaled to size 10.79993pt on input line 20.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 8.09995pt on input line 22.
+(Font)              scaled to size 8.09995pt on input line 24.
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <9> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 22.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 24.
 LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
-(Font)              scaled to size 8.09995pt on input line 22.
+(Font)              scaled to size 8.09995pt on input line 24.
 
-Underfull \hbox (badness 1668) in paragraph at lines 29--30
+Underfull \hbox (badness 1668) in paragraph at lines 31--32
 []\T1/phv/m/n/10 fv[]Scalar[]Matrix [] ((0.[]5) $\OMS/cmsy/m/n/10 $\T1/phv/m/n
 /10 (1/[]) $\OMS/cmsy/m/n/10 $[] $$\T1/phv/m/n/10 fvm[]::ddt([])==[] $\OMS/cm
 sy/m/n/10 $\T1/phv/m/n/10 0.[]5 $\OMS/cmsy/m/n/10 $\T1/phv/m/n/10 (1/[]) $\OM
@@ -960,33 +960,32 @@ S/cmsy/m/n/10 $[] $$[] $$\T1/phv/m/n/10 fvm[]
  []
 
 LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <8> not available
-(Font)              Font shape `T1/pcr/m/sl' tried instead on input line 43.
+(Font)              Font shape `T1/pcr/m/sl' tried instead on input line 45.
 [6]
 LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <7> not available
-(Font)              Font shape `T1/pcr/m/sl' tried instead on input line 59.
+(Font)              Font shape `T1/pcr/m/sl' tried instead on input line 61.
 
-Underfull \hbox (badness 10000) in paragraph at lines 59--60
+Underfull \hbox (badness 10000) in paragraph at lines 61--62
 |  [] $\OMS/cmsy/m/n/8 $[] $$[] $$ \T1/pcr/m/sl/8 fvm[]::ddtphi = =2.0 $\OMS
 /cmsy/m/n/8 $[] $$[] $$[] $$[] $$\T1/pcr/m/sl/8 fvm[]:[]
  []
 
 
-Overfull \hbox (864.3083pt too wide) in paragraph at lines 59--60
+Overfull \hbox (850.45824pt too wide) in paragraph at lines 61--62
 \T1/pcr/m/sl/8 :laplacian(ac[]_[]01 $\OMS/cmsy/m/n/8 $\T1/pcr/m/sl/8 ac[]_[]01
 , [])+2 $\OMS/cmsy/m/n/8 $[] $$[] $$[] $$\T1/pcr/m/sl/8 fvc[]:[]:div(dadgra
 dPhi) - 18.0 $\OMS/cmsy/m/n/8 $\T1/pcr/m/sl/8 ([]/[]) $\OMS/cmsy/m/n/8 $\T1/p
 cr/m/sl/8 ([]) $\OMS/cmsy/m/n/8 $\T1/pcr/m/sl/8 (1-[]) $\OMS/cmsy/m/n/8 $\T1/
-pcr/m/sl/8 (1-2.0 $\OMS/cmsy/m/n/8 $[]\T1/pcr/m/sl/8 )+[] $\OMS/cmsy/m/n/8 $\
-T1/pcr/m/sl/8 ([]-[]) $\OMS/cmsy/m/n/8 $\T1/pcr/m/sl/8 ([] -(2 $\OMS/cmsy/m/n/
-8 $[] $$[] \T1/pcr/m/sl/8 - 2 $\OMS/cmsy/m/n/8 $[] $$\T1/pcr/m/sl/8 ([]-T)/
-[])) $\OMS/cmsy/m/n/8 $\T1/pcr/m/sl/8 30.0 $\OMS/cmsy/m/n/8 $[] $$[] $$\T1/
-pcr/m/sl/8 (1.0-[]) $\OMS/cmsy/m/n/8 $\T1/pcr/m/sl/8 (1.0-[])+6 $\OMS/cmsy/m/n
-/8 $[] $$[] $$\T1/pcr/m/sl/8 (1.0-[]) $\OMS/cmsy/m/n/8 $[] $$\T1/pcr/m/sl/
-8 (1-[]) $\OMS/cmsy/m/n/8 $[]
+pcr/m/sl/8 (1-2.0 $\OMS/cmsy/m/n/8 $[]\T1/pcr/m/sl/8 )+([]-[]) $\OMS/cmsy/m/n/
+8 $\T1/pcr/m/sl/8 ([] -(2 $\OMS/cmsy/m/n/8 $[] $$[] \T1/pcr/m/sl/8 - 2 $\OMS
+/cmsy/m/n/8 $[] $$\T1/pcr/m/sl/8 ([]-T)/[])) $\OMS/cmsy/m/n/8 $\T1/pcr/m/sl/
+8 30.0 $\OMS/cmsy/m/n/8 $[] $$[] $$\T1/pcr/m/sl/8 (1.0-[]) $\OMS/cmsy/m/n/8 
+$\T1/pcr/m/sl/8 (1.0-[])+6 $\OMS/cmsy/m/n/8 $[] $$[] $$\T1/pcr/m/sl/8 (1.0-
+[]) $\OMS/cmsy/m/n/8 $[] $$\T1/pcr/m/sl/8 (1-[]) $\OMS/cmsy/m/n/8 $[]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 71--72
+Underfull \hbox (badness 10000) in paragraph at lines 73--74
 |  \T1/pcr/m/n/8 (0.[]5) $\OMS/cmsy/m/n/8 $\T1/pcr/m/n/8 (1/[]) $\OMS/cmsy/m/n
 /8 $[] $$\T1/pcr/m/n/8 fvm[]::ddt([])  \T1/pcr/m/sl/8 = =[] $\OMS/cmsy/m/n/8 
 $\T1/pcr/m/sl/8 0.5 $\OMS/cmsy/m/n/8 $\T1/pcr/m/sl/8 (1/[]) $\OMS/cmsy/m/n/8 
@@ -994,7 +993,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 71--72
  []
 
 
-Overfull \hbox (238.88847pt too wide) in paragraph at lines 71--72
+Overfull \hbox (238.88847pt too wide) in paragraph at lines 73--74
 \T1/pcr/m/sl/8 :laplacian((1-[]), []) -([]-[]) $\OMS/cmsy/m/n/8 $[] $$\T1/pcr
 /m/sl/8 fvc[]:[]:ddt([]) $\OMS/cmsy/m/n/8 $\T1/pcr/m/sl/8 30.0 $\OMS/cmsy/m/n/
 8 $[] $$[] $$\T1/pcr/m/sl/8 (1.0-[]) $\OMS/cmsy/m/n/8 $\T1/pcr/m/sl/8 (1.0-
@@ -1010,39 +1009,39 @@ LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 pdfTeX warning: pdflatex (file ./create_fields_8_h__incl.pdf): PDF inclusion: m
 ultiple pdfs with page group included in a single page
 >
-<create_fields_8_h__incl.pdf, id=595, 226.8475pt x 178.6675pt>
+<create_fields_8_h__incl.pdf, id=592, 226.8475pt x 178.6675pt>
 File: create_fields_8_h__incl.pdf Graphic file (type pdf)
 <use create_fields_8_h__incl.pdf>
-Package pdftex.def Info: create_fields_8_h__incl.pdf  used on input line 8.
+Package pdftex.def Info: create_fields_8_h__incl.pdf  used on input line 9.
 (pdftex.def)             Requested size: 226.0pt x 178.00185pt.
  [8] <./create_fields_8_h__dep__incl.pdf
 
 pdfTeX warning: pdflatex (file ./create_fields_8_h__dep__incl.pdf): PDF inclusi
 on: multiple pdfs with page group included in a single page
 >
-<create_fields_8_h__dep__incl.pdf, id=612, 226.8475pt x 200.75pt>
+<create_fields_8_h__dep__incl.pdf, id=609, 226.8475pt x 200.75pt>
 File: create_fields_8_h__dep__incl.pdf Graphic file (type pdf)
 <use create_fields_8_h__dep__incl.pdf>
 Package pdftex.def Info: create_fields_8_h__dep__incl.pdf  used on input line 1
-5.
+7.
 (pdftex.def)             Requested size: 226.0pt x 200.00208pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 32--33
+Underfull \hbox (badness 10000) in paragraph at lines 34--35
 |  \T1/pcr/m/n/8 IOobject("phi", run[]Time.[]time[]Name(), mesh, IOobject[]::[]
 MUST[]_[][]READ, IOobject[]::[]AUTO[]_[][]
  []
 
 [9] <./create_fields_8_h_a8aee6609d88e034725a0cb36b6e2d72f_icgraph.pdf>
-<create_fields_8_h_a8aee6609d88e034725a0cb36b6e2d72f_icgraph.pdf, id=631, 189.7
+<create_fields_8_h_a8aee6609d88e034725a0cb36b6e2d72f_icgraph.pdf, id=628, 189.7
 0876pt x 100.375pt>
 File: create_fields_8_h_a8aee6609d88e034725a0cb36b6e2d72f_icgraph.pdf Graphic f
 ile (type pdf)
 <use create_fields_8_h_a8aee6609d88e034725a0cb36b6e2d72f_icgraph.pdf>
 Package pdftex.def Info: create_fields_8_h_a8aee6609d88e034725a0cb36b6e2d72f_ic
-graph.pdf  used on input line 46.
+graph.pdf  used on input line 49.
 (pdftex.def)             Requested size: 189.0pt x 100.00255pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 53--54
+Underfull \hbox (badness 10000) in paragraph at lines 56--57
 |  \T1/pcr/m/n/8 IOobject("mu", run[]Time.[]time[]Name(), mesh, IOobject[]::[]M
 UST[]_[][]READ, IOobject[]::[]AUTO[]_[][]
  []
@@ -1052,37 +1051,37 @@ UST[]_[][]READ, IOobject[]::[]AUTO[]_[][]
 pdfTeX warning: pdflatex (file ./d_adgrad_phi_mod_8_h__dep__incl.pdf): PDF incl
 usion: multiple pdfs with page group included in a single page
 >
-<d_adgrad_phi_mod_8_h__dep__incl.pdf, id=639, 226.8475pt x 200.75pt>
+<d_adgrad_phi_mod_8_h__dep__incl.pdf, id=636, 226.8475pt x 200.75pt>
 File: d_adgrad_phi_mod_8_h__dep__incl.pdf Graphic file (type pdf)
 <use d_adgrad_phi_mod_8_h__dep__incl.pdf>
 Package pdftex.def Info: d_adgrad_phi_mod_8_h__dep__incl.pdf  used on input lin
-e 7.
+e 8.
 (pdftex.def)             Requested size: 226.0pt x 200.00208pt.
  [10]) (info_8md.tex) (phase_field_dynamic_8_c.tex <./phase_field_dynamic_8_c__
 incl.pdf>
-<phase_field_dynamic_8_c__incl.pdf, id=658, 1111.15125pt x 178.6675pt>
+<phase_field_dynamic_8_c__incl.pdf, id=655, 1111.15125pt x 178.6675pt>
 File: phase_field_dynamic_8_c__incl.pdf Graphic file (type pdf)
 <use phase_field_dynamic_8_c__incl.pdf>
 Package pdftex.def Info: phase_field_dynamic_8_c__incl.pdf  used on input line 
-17.
+18.
 (pdftex.def)             Requested size: 350.0pt x 56.27782pt.
  [11] <./phase_field_dynamic_8_c_a0ddf1224851353fc92bfbff6f499fa97_cgraph.pdf>
-<phase_field_dynamic_8_c_a0ddf1224851353fc92bfbff6f499fa97_cgraph.pdf, id=676, 
+<phase_field_dynamic_8_c_a0ddf1224851353fc92bfbff6f499fa97_cgraph.pdf, id=673, 
 201.75375pt x 252.945pt>
 File: phase_field_dynamic_8_c_a0ddf1224851353fc92bfbff6f499fa97_cgraph.pdf Grap
 hic file (type pdf)
 <use phase_field_dynamic_8_c_a0ddf1224851353fc92bfbff6f499fa97_cgraph.pdf>
 Package pdftex.def Info: phase_field_dynamic_8_c_a0ddf1224851353fc92bfbff6f499f
-a97_cgraph.pdf  used on input line 56.
+a97_cgraph.pdf  used on input line 58.
 (pdftex.def)             Requested size: 201.0pt x 252.00262pt.
 ) (pre_alan_8_h.tex [12] <./pre_alan_8_h__dep__incl.pdf>
-<pre_alan_8_h__dep__incl.pdf, id=692, 226.8475pt x 200.75pt>
+<pre_alan_8_h__dep__incl.pdf, id=689, 226.8475pt x 200.75pt>
 File: pre_alan_8_h__dep__incl.pdf Graphic file (type pdf)
 <use pre_alan_8_h__dep__incl.pdf>
-Package pdftex.def Info: pre_alan_8_h__dep__incl.pdf  used on input line 7.
+Package pdftex.def Info: pre_alan_8_h__dep__incl.pdf  used on input line 8.
 (pdftex.def)             Requested size: 226.0pt x 200.00208pt.
  [13]
-Overfull \hbox (29.19357pt too wide) in paragraph at lines 24--25
+Overfull \hbox (29.19357pt too wide) in paragraph at lines 25--26
 |  [] $\OMS/cmsy/m/n/8 $[] $$[] $$ \T1/pcr/m/sl/8 fvm[]::ddtphi) -epsilon $\
 OMS/cmsy/m/n/8 $\T1/pcr/m/sl/8 gamma $\OMS/cmsy/m/n/8 $\T1/pcr/m/sl/8 dimx $\
 OMS/cmsy/m/n/8 $\T1/pcr/m/sl/8 dimx $\OMS/cmsy/m/n/8 $\T1/pcr/m/sl/8 fvm[]::l
@@ -1091,14 +1090,14 @@ aplacian(phi)+2.[]
 
 ) (read_transport_properties_8_h.tex <./read_transport_properties_8_h__dep__inc
 l.pdf>
-<read_transport_properties_8_h__dep__incl.pdf, id=730, 226.8475pt x 200.75pt>
+<read_transport_properties_8_h__dep__incl.pdf, id=727, 226.8475pt x 200.75pt>
 File: read_transport_properties_8_h__dep__incl.pdf Graphic file (type pdf)
 <use read_transport_properties_8_h__dep__incl.pdf>
 Package pdftex.def Info: read_transport_properties_8_h__dep__incl.pdf  used on 
-input line 7.
+input line 8.
 (pdftex.def)             Requested size: 226.0pt x 200.00208pt.
  [14]
-Underfull \hbox (badness 10000) in paragraph at lines 69--70
+Underfull \hbox (badness 10000) in paragraph at lines 68--69
 |  \T1/pcr/m/n/8 IOobject("transport[]Properties", run[]Time.[]constant(), mesh
 , IOobject[]::[]MUST[]_[][]READ,
  []
@@ -1111,7 +1110,7 @@ pdfTeX warning: pdflatex (file ./read_transport_properties_8_h_af589b6be2b2f8d2
 cluded in a single page
 >
 <read_transport_properties_8_h_af589b6be2b2f8d27fa13e0d974be4e09_icgraph.pdf, i
-d=782, 198.7425pt x 100.375pt>
+d=778, 198.7425pt x 100.375pt>
 File: read_transport_properties_8_h_af589b6be2b2f8d27fa13e0d974be4e09_icgraph.p
 df Graphic file (type pdf)
 <use read_transport_properties_8_h_af589b6be2b2f8d27fa13e0d974be4e09_icgraph.pd
@@ -1127,52 +1126,104 @@ pdfTeX warning: pdflatex (file ./read_transport_properties_8_h_ac2cebe58f13eebd
 cluded in a single page
 >
 <read_transport_properties_8_h_ac2cebe58f13eebd1788ee78f2145eb2c_icgraph.pdf, i
-d=800, 186.6975pt x 100.375pt>
+d=796, 186.6975pt x 100.375pt>
 File: read_transport_properties_8_h_ac2cebe58f13eebd1788ee78f2145eb2c_icgraph.p
 df Graphic file (type pdf)
 <use read_transport_properties_8_h_ac2cebe58f13eebd1788ee78f2145eb2c_icgraph.pd
 f>
 Package pdftex.def Info: read_transport_properties_8_h_ac2cebe58f13eebd1788ee78
-f2145eb2c_icgraph.pdf  used on input line 234.
+f2145eb2c_icgraph.pdf  used on input line 235.
 (pdftex.def)             Requested size: 186.0pt x 100.00409pt.
  [18] <./read_transport_properties_8_h_aebef63bdd9e1cd9ac16ac14eb49f8c45_icgrap
 h.pdf>
 <read_transport_properties_8_h_aebef63bdd9e1cd9ac16ac14eb49f8c45_icgraph.pdf, i
-d=814, 186.6975pt x 100.375pt>
+d=810, 186.6975pt x 100.375pt>
 File: read_transport_properties_8_h_aebef63bdd9e1cd9ac16ac14eb49f8c45_icgraph.p
 df Graphic file (type pdf)
 <use read_transport_properties_8_h_aebef63bdd9e1cd9ac16ac14eb49f8c45_icgraph.pd
 f>
 Package pdftex.def Info: read_transport_properties_8_h_aebef63bdd9e1cd9ac16ac14
-eb49f8c45_icgraph.pdf  used on input line 255.
+eb49f8c45_icgraph.pdf  used on input line 257.
 (pdftex.def)             Requested size: 186.0pt x 100.00409pt.
  [19] <./read_transport_properties_8_h_a131cb0cde668ae9edb66df2159f6dddf_icgrap
 h.pdf>
 <read_transport_properties_8_h_a131cb0cde668ae9edb66df2159f6dddf_icgraph.pdf, i
-d=828, 201.75375pt x 100.375pt>
+d=824, 201.75375pt x 100.375pt>
 File: read_transport_properties_8_h_a131cb0cde668ae9edb66df2159f6dddf_icgraph.p
 df Graphic file (type pdf)
 <use read_transport_properties_8_h_a131cb0cde668ae9edb66df2159f6dddf_icgraph.pd
 f>
 Package pdftex.def Info: read_transport_properties_8_h_a131cb0cde668ae9edb66df2
-159f6dddf_icgraph.pdf  used on input line 318.
+159f6dddf_icgraph.pdf  used on input line 315.
 (pdftex.def)             Requested size: 201.0pt x 100.00102pt.
 ) (write_8_h.tex [20]) [21] [22
 
-]
-No file refman.ind.
-(refman.aux)
+] (refman.ind
+Overfull \hbox (41.50539pt too wide) in paragraph at lines 101--103
+[]\T1/phv/m/n/10 PhaseFieldSolverDynamic/phaseFieldSolverDynamic/alphaEqn.H,
+ []
+
+
+Overfull \hbox (43.98936pt too wide) in paragraph at lines 103--105
+[]\T1/phv/m/n/10 PhaseFieldSolverDynamic/phaseFieldSolverDynamic/correctPhi.H,
+ []
+
+
+Overfull \hbox (52.35934pt too wide) in paragraph at lines 105--107
+[]\T1/phv/m/n/10 PhaseFieldSolverDynamic/phaseFieldSolverDynamic/createFields.H
+,
+ []
+
+
+Overfull \hbox (67.82993pt too wide) in paragraph at lines 107--109
+[]\T1/phv/m/n/10 PhaseFieldSolverDynamic/phaseFieldSolverDynamic/dAdgradPhiMod.
+H,
+ []
+
+
+Overfull \hbox (23.36179pt too wide) in paragraph at lines 109--111
+[]\T1/phv/m/n/10 PhaseFieldSolverDynamic/phaseFieldSolverDynamic/info.md,
+ []
+
+
+Overfull \hbox (82.49991pt too wide) in paragraph at lines 111--113
+[]\T1/phv/m/n/10 PhaseFieldSolverDynamic/phaseFieldSolverDynamic/phaseFieldDyna
+mic.C,
+ []
+
+
+Overfull \hbox (34.4945pt too wide) in paragraph at lines 113--115
+[]\T1/phv/m/n/10 PhaseFieldSolverDynamic/phaseFieldSolverDynamic/preAlan.H,
+ []
+
+
+Overfull \hbox (100.4272pt too wide) in paragraph at lines 115--117
+[]\T1/phv/m/n/10 PhaseFieldSolverDynamic/phaseFieldSolverDynamic/readTransportP
+roperties.H,
+ []
+
+
+Overfull \hbox (22.4797pt too wide) in paragraph at lines 117--119
+[]\T1/phv/m/n/10 PhaseFieldSolverDynamic/phaseFieldSolverDynamic/write.H,
+ []
+
+[23
+
+
+] [24
+
+]) (refman.aux)
 Package rerunfilecheck Info: File `refman.out' has not changed.
-(rerunfilecheck)             Checksum: 443F7B4E96D4FC5525E5258B1BCB5861;13639.
+(rerunfilecheck)             Checksum: AC7643CB083D6D06124F6EE1EE75ABBE;13568.
  ) 
 Here is how much of TeX's memory you used:
- 16823 strings out of 480839
- 262338 string characters out of 2903804
- 597073 words of memory out of 3000000
- 33944 multiletter control sequences out of 15000+600000
+ 16825 strings out of 480839
+ 262580 string characters out of 2903804
+ 596940 words of memory out of 3000000
+ 33943 multiletter control sequences out of 15000+600000
  461900 words of font info for 97 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 101i,15n,117p,3608b,523s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 101i,16n,117p,3516b,523s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/home/tanmay/.miktex/texmfs/install/fonts/enc/dvips/base/8r.enc}</home/tanma
 y/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi7.pfb></home/tanmay
 /.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy10.pfb></home/tanmay
@@ -1185,9 +1236,9 @@ l/fonts/type1/urw/helvetic/uhvb8a.pfb></home/tanmay/.miktex/texmfs/install/font
 s/type1/urw/helvetic/uhvb8ac.pfb></home/tanmay/.miktex/texmfs/install/fonts/typ
 e1/urw/helvetic/uhvr8a.pfb></home/tanmay/.miktex/texmfs/install/fonts/type1/urw
 /helvetic/uhvro8a.pfb>
-Output written on refman.pdf (26 pages, 350817 bytes).
+Output written on refman.pdf (28 pages, 366622 bytes).
 PDF statistics:
- 937 PDF objects out of 1000 (max. 8388607)
- 163 named destinations out of 1000 (max. 500000)
+ 1024 PDF objects out of 1200 (max. 8388607)
+ 164 named destinations out of 1000 (max. 500000)
  583 words of extra memory for PDF output out of 10000 (max. 10000000)
 

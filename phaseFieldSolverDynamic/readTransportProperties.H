@@ -46,7 +46,7 @@
         //!Strength of anisotropy
         dimensionedScalar delta_01(transportProperties.lookup("delta_01"));
         dimensionedScalar A(transportProperties.lookup("A"));
-        dimensionedScalar B(transportProperties.lookup("B"));//G=Ac^2;d2G/dc^2=A
+        //dimensionedScalar B(transportProperties.lookup("B"));//G=Ac^2;d2G/dc^2=A
         //!Melting temperature
         dimensionedScalar T0(transportProperties.lookup("T0"));
 	//dimensionedScalar T(transportProperties.lookup("T"));                         //Operating temperature

@@ -326,7 +326,7 @@ h(\phi) = {\phi}^3(6{\phi}^2 - 15{\phi} + 10)
 \label{11a}
 \]</span></p>
 <ul>
-<li>In this model, direct solution is conducted for the thermodynamic variable <span class="math inline">\(\mu\)</span>, which relate the phase concentrations <span class="math inline">\(c^\alpha_i\)</span>. This is possible because the concentrations <span class="math inline">\(c^\alpha_i(T,\mu)\)</span> are written as explicit functions of the chemical potential <span class="math inline">\(\mu\)</span>. As will be seen in the solver source code, the equilibrium chemical potential, <span class="math inline">\(\mu_{eq}\)</span> is expressed in terms of slope of the liquidus, <span class="math inline">\(m_{\beta}\)</span>, equilibrium composition, <span class="math inline">\(c^{eq}\)</span> and melting temperature, <span class="math inline">\(T_0\)</span>. According to the parabolic approximation for free energy:</li>
+<li>In this model, direct solution is conducted for the thermodynamic variable <span class="math inline">\(\mu\)</span>, which relate the phase concentrations <span class="math inline">\(c^\alpha_i\)</span>. This is possible because the concentrations <span class="math inline">\(c^\alpha_i(T,\mu)\)</span> are written as explicit functions of the chemical potential <span class="math inline">\(\mu\)</span>. As will be seen in the solver source code, the equilibrium chemical potential, <span class="math inline">\(\mu_{eq}\)</span> is expressed in terms of equilibrium composition, <span class="math inline">\(c^{eq}\)</span>, temperature difference with melting temperature, <span class="math inline">\((T_0 - T)\)</span> and slope of the liquidus (or rate of change of temperature w.r.t. composition), <span class="math inline">\(m_{\beta}\)</span>. According to the parabolic approximation for free energy:</li>
 </ul>
 <p><span class="math display">\[
 \mu_{eq} = 2A c^{eq} - 2A (T_0 - T)/m_{\beta}
@@ -716,7 +716,7 @@ T0           T0 [0 0 0 0 0 0 0] 1.0; //Melting temperature
 T            T0 [0 0 0 0 0 0 0] 0.93; //Operating temperature
 delta_01         delta_01 [0 0 0 0 0 0 0] 0.02; //Strength of anisotropy
 A            A [0 0 0 0 0 0 0] 1;
-B            B [0 0 0 0 0 0 0] 1;
+//B            B [0 0 0 0 0 0 0] 1;
 // ************************************************************************* //</code></pre>
 <p>For this case, thermal gradient, <span class="math inline">\(G\)</span> and pulling velocity, <span class="math inline">\(v\)</span> are kept zero to allow solidification in the form of freely growing dendrites. The physical properties are read by <em>readTransportProperties.H</em> while running the case.</p>
 </div>
@@ -1305,7 +1305,7 @@ T0           T0 [0 0 0 0 0 0 0] 1.0; //Melting temperature
 T            T0 [0 0 0 0 0 0 0] 0.93; //Operating temperature
 delta_01         delta_01 [0 0 0 0 0 0 0] 0.02; //Strength of anisotropy
 A            A [0 0 0 0 0 0 0] 1;
-B            B [0 0 0 0 0 0 0] 1;
+//B            B [0 0 0 0 0 0 0] 1;
 // ************************************************************************* //</code></pre>
 <p>It must be noted that, thermal gradient, <span class="math inline">\(G\)</span> and velocity, <span class="math inline">\(v\)</span> are nonzero for directional solidification. The remaining entries are same as section 1.2.4.</p>
 </div>
